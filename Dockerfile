@@ -4,4 +4,4 @@ COPY . /app
 RUN npm i serve
 WORKDIR /app/android
 RUN ./gradlew clean assembleRelease -PreactNativeArchitectures=x86
-COPY /app/android .
+RUN npx serve -y
