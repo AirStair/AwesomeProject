@@ -3,4 +3,4 @@ WORKDIR /app
 COPY . /app
 RUN npm i
 WORKDIR /app/android
-RUN ./gradlew assembleRelease
+RUN ./gradlew clean assembleRelease -PreactNativeArchitectures=x86
