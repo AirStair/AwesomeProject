@@ -1,3 +1,4 @@
 FROM node:22-alpine
-RUN npx serve -l 80
+EXPOSE 3478:80
+RUN npx serve -l 8000
 
